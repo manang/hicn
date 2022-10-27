@@ -50,6 +50,7 @@ strcpy_s (char *dst, size_t n, const char *src)
     }
 
   dst[n - 1] = 0;
+  // snprintf(dst, n, "%s", src);
   strncpy (dst, src, n);
 
   if (dst[n - 1] != 0)
